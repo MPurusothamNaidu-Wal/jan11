@@ -1,87 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="bootstrap-4.3.1/bootstrap-4.3.1/css/bootstrap.css">
-    <link rel="stylesheet" href="miniproject.css">
-    <title>Mini Project</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="bootstrap-4.3.1/bootstrap-4.3.1/css/bootstrap.css">
+  <link rel="stylesheet" href="miniproject.css">
+  <title>Mini Project</title>
 </head>
-<body style="background: rgb(190, 147, 116)">
-    <h1 class="h1" style="text-align: center;">Ecommerce Application</h1>
-    <div class="card-group p-5">
-            <article class="card" >
-                <img src="images/shirt.jpg" class="card-img-top">
-                <div class="card-body d-inline" style="text-align: center;">
-                  <h5 class="card-title" id="name1"> Shirt</h5>
-                  <span>Cost:</span> <span id="price1">80</span><br>
-                  <button class="btn mb-2 mb-md-0 btn-primary btn-round" id="button1" onclick="change1()"> Add to cart</button>
-                </div>
-            </article>
-            <article class="card ml-4">
-                <img src="images/pant.jpg" class="card-img-top" >
-                <div class="card-body" style="text-align: center;">
-                  <h5 class="card-title" id="name2">Pant</h5>
-                  <span>Cost:</span> <span id="price2">75</span><br>
-                  <button class="btn mb-2 mb-md-0 btn-primary btn-round" id="button2" onclick="change2()"> Add to cart</button>
-                </div>
-            </article>
 
-            <article class="card ml-4" >
-                <img src="images/tshirt.jpg" class="card-img-top" alt="...">
-                <div class="card-body" style="text-align: center;">
-                  <h5 class="card-title" id="name3">Tshirt</h5>
-                  <span>Cost:</span> <span id="price3">40</span><br>
-                  <button class="btn mb-2 mb-md-0 btn-primary btn-round" id="button3" onclick="change3()"> Add to cart</button>
-                </div>
-            </article>
+<body style="background: #F2F7F0">
+  <h1 class="h1" style="text-align: center;">Ecommerce Application
+    <a href="cart.html"><svg xmlns="http://www.w3.org/2000/svg" style="float:right;" width="40" height="40"
+        fill="currentColor" class="bi bi-cart mr-4 dropdown-toggle" viewBox="0 0 16 16" id="bu">
+        <path
+          d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+      </svg></a>
 
-            <article class="card ml-4">
-                <img src="images/short.jpg" class="card-img-top" alt="...">
-                <div class="card-body" style="text-align: center;">
-                  <h5 class="card-title" id="name4">Short</h5>
-                  <span>Cost:</span> <span id="price4">25</span><br>
-                  <button class="btn mb-2 mb-md-0 btn-primary btn-round" id="button4" onclick="change4()"> Add to cart</button>
-                </div>
-            </article>
-    </div>
-      
-      <div class="card-group p-5 mt-2  mb-5 ">
-        <article class="card" >
-          <img src="images/shoes.jpg" class="card-img-top" alt="...">
-          <div class="card-body"style="text-align: center;">
-            <h5 class="card-title" id="name5">Shoes</h5>
-            <span>Cost:</span> <span id="price5">35</span><br>
-            <button class="btn mb-2 mb-md-0 btn-primary btn-round" id="button5" onclick="change5()"> Add to cart</button>
-        </div>
-    </article>
-        <article class="card ml-4">
-          <img src="images/watch.jpg" class="card-img-top" alt="...">
-          <div class="card-body" style="text-align: center;">
-            <h5 class="card-title" id="name6">Watch</h5>
-            <span>Cost:</span> <span id="price6">45</span><br>
-            <button class="btn mb-2 mb-md-0 btn-primary btn-round" id="button6" onclick="change6()"> Add to cart</button>
-          
-        </div>
-    </article>
-        <article class="card ml-4">
-          <img src="images/frock.jpg" class="card-img-top" alt="...">
-          <div class="card-body" style="text-align: center;">
-            <h5 class="card-title" id="name7">Frock</h5>
-            <span>Cost:</span> <span id="price7">100</span><br>
-            <button class="btn mb-2 mb-md-0 btn-primary btn-round" id="button7" onclick="change7()"> Add to cart</button>
-          </div>
-        </article>
-        <article class="card ml-4">
-            <img src="images/purse.png" class="card-img-top h-60" alt="...">
-            <div class="card-body" style="text-align: center;">
-              <h5 class="card-title" id="name8">Purse</h5>
-              <span>Cost:</span> <span id="price8">40</span><br>
-              <button class="btn mb-2 mb-md-0 btn-primary btn-round" id="button8" onclick="change8()"> Add to cart</button>
-            </div>
-        </article>
+  </h1>
+  <div class="card-group p-5">
+    <article class="card">
+      <img src="images/shirt.jpg" class="card-img-top">
+      <div class="card-body d-inline" style="text-align: center;">
+        <h5 class="card-title" id="name1"> Shirt</h5>
+        <span>Cost:</span> <span id="price1">80</span><br>
+        <button class="btn mb-2 mb-md-0 btn-light btn-round" id="button1" onclick="change1()"> Add to cart</button>
       </div>
-      <script src="miniproject.js"></script>
+    </article>
+    <article class="card ml-4">
+      <img src="images/pant.jpg" class="card-img-top">
+      <div class="card-body" style="text-align: center;">
+        <h5 class="card-title" id="name2">Pant</h5>
+        <span>Cost:</span> <span id="price2">75</span><br>
+        <button class="btn mb-2 mb-md-0 btn-light btn-round" id="button2" onclick="change2()"> Add to cart</button>
+      </div>
+    </article>
+
+    <article class="card ml-4">
+      <img src="images/tshirt.jpg" class="card-img-top" alt="...">
+      <div class="card-body" style="text-align: center;">
+        <h5 class="card-title" id="name3">Tshirt</h5>
+        <span>Cost:</span> <span id="price3">40</span><br>
+        <button class="btn mb-2 mb-md-0 btn-light btn-round" id="button3" onclick="change3()"> Add to cart</button>
+      </div>
+    </article>
+
+    <article class="card ml-4">
+      <img src="images/short.jpg" class="card-img-top" alt="...">
+      <div class="card-body" style="text-align: center;">
+        <h5 class="card-title" id="name4">Short</h5>
+        <span>Cost:</span> <span id="price4">25</span><br>
+        <button class="btn mb-2 mb-md-0 btn-light btn-round" id="button4" onclick="change4()"> Add to cart</button>
+      </div>
+    </article>
+  </div>
+
+  <div class="card-group p-5 mt-2  mb-5 ">
+    <article class="card">
+      <img src="images/shoes.jpg" class="card-img-top" alt="...">
+      <div class="card-body" style="text-align: center;">
+        <h5 class="card-title" id="name5">Shoes</h5>
+        <span>Cost:</span> <span id="price5">35</span><br>
+        <button class="btn mb-2 mb-md-0 btn-light btn-round" id="button5" onclick="change5()"> Add to cart</button>
+      </div>
+    </article>
+    <article class="card ml-4">
+      <img src="images/watch.jpg" class="card-img-top" alt="...">
+      <div class="card-body" style="text-align: center;">
+        <h5 class="card-title" id="name6">Watch</h5>
+        <span>Cost:</span> <span id="price6">45</span><br>
+        <button class="btn mb-2 mb-md-0 btn-light btn-round" id="button6" onclick="change6()"> Add to cart</button>
+
+      </div>
+    </article>
+    <article class="card ml-4">
+      <img src="images/frock.jpg" class="card-img-top" alt="...">
+      <div class="card-body" style="text-align: center;">
+        <h5 class="card-title" id="name7">Frock</h5>
+        <span>Cost:</span> <span id="price7">100</span><br>
+        <button class="btn mb-2 mb-md-0 btn-light btn-round" id="button7" onclick="change7()"> Add to cart</button>
+      </div>
+    </article>
+    <article class="card ml-4">
+      <img src="images/purse.png" class="card-img-top h-60" alt="...">
+      <div class="card-body" style="text-align: center;">
+        <h5 class="card-title" id="name8">Purse</h5>
+        <span>Cost:</span> <span id="price8">40</span><br>
+        <button class="btn mb-2 mb-md-0 btn-light btn-round" id="button8" onclick="change8()"> Add to cart</button>
+      </div>
+    </article>
+  </div>
+  <script src="miniproject.js"></script>
 </body>
+
 </html>

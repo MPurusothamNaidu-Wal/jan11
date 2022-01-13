@@ -1,7 +1,10 @@
 .card-group{
-    background: black;
+    background:#26424E ;
     border-radius: 30px;
 }
 .btn-round{
     border-radius: 10px;
+}
+.card{
+    background: #FF6600;
 }
